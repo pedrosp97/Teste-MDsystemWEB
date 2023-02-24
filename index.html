@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    
+    <title>Desafio MDsystemWEB</title>
+</head>
+<body>
+    <div class="mainMenuContainer">
+        <div class="menuContainer">
+        <div class="logoEstilo"></div>
+        <span><a href="#">Logo</a></span>
+    </div>
+    <nav class="menu">
+    <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    </nav>
+    </div>
+    <div class="topnav">
+        <a href="#home">Logo</a>     
+        <div id="myLinks">
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#">Contato</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <section class="centerContent">
+        <h1 class="title">Olá, nós somos a Mdsystem web!</h1>
+        <h3 class="subtitle">Damos vida aos seus negócios digitais.</h3>
+    </section>
+    <section class="sobre">
+        <div class="sobreContainer">
+            <div id="sobre" class="sobreTituloContainer">
+                <h3 class="sobreTitulo">SOBRE NÓS</h3>
+            </div>
+            <div class="nav-container">
+                <span class="dot" onclick="currentSlide(1)">Missão</span>
+                <span class="dot" onclick="currentSlide(2)">Visão</span>
+                <span class="dot" onclick="currentSlide(3)">Valores</span>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <div class="text" id="text"></div>
+                </div>
+                <div class="mySlides">
+                    <div class="text" id="text2"></div>
+                </div>
+                <div class="mySlides">
+                    <div class="text" id="text3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div id="servicos" class="servicesUsTittleContainer">
+            <h3 class="servicesTittle">SERVIÇOS</h3>
+        </div>
+        <div class="slideshow-container2">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="mySlides2">
+                <div class="serviceTitleWraper">
+                    <span class="serviceTitle">placeholder title1</span>
+                    <span class="text2 service">placeholder text1</span>
+                </div>
+            </div>
+            <div class="mySlides2">
+                <div class="serviceTitleWraper">
+                    <span class="serviceTitle2">placeholder title2</span>
+                    <span class="text2 service2">placeholder text2</span>
+                </div>
+            </div>
+            <div class="mySlides2">
+                <div class="serviceTitleWraper">
+                    <span class="serviceTitle3">placeholder title3</span>
+                    <span class="text2 service3">placeholder text3</span>
+                </div>
+            </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+</body>
+
+<script src="js/scripts.js"></script>
+<script src="js/api.js"></script>
+</html>
